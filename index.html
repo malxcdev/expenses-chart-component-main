@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Expenses chart component</title>
+
+</head>
+
+<body>
+  <main class="p-4 flex flex-col gap-4">
+    <section id="myBalance" class="rounded-lg text-white flex justify-between p-5 items-center">
+      <div>
+        <h1 class="text-lg">My balance</h1>
+        <p class="font-bold text-3xl">$921.48</p>
+      </div>
+      <figure>
+        <img src="./images/logo.svg" alt="">
+      </figure>
+    </section>
+    <section id="spending" class="bg-white rounded-lg p-5">
+      <h2 class="text-2xl color-dark-brown font-semibold">Spending - Last 7 days</h2>
+      <div class="mt-10">
+        <div class="flex justify-between gap-2">
+          <div class="flex flex-col justify-end items-center gap-2">
+            <div class="bg-dark-brown px-2 py-1 rounded-lg text-white font-bold hidden">$10.25</div>
+            <div id="bar-mon" class="bg-soft-red rounded-lg px-6"></div>
+            <div class="font-light">mon</div>
+          </div>
+          <div class="flex flex-col justify-end items-center gap-2">
+            <div class="bg-dark-brown px-2 py-1 rounded-lg text-white font-bold hidden">$10.25</div>
+            <div id="bar-tue" class="bg-soft-red rounded-lg px-6"></div>
+            <div class="font-light">tue</div>
+          </div>
+          <div class="flex flex-col justify-end items-center gap-2">
+            <div class="bg-dark-brown px-2 py-1 rounded-lg text-white font-bold hidden">$10.25</div>
+            <div id="bar-wed" class="bg-soft-red rounded-lg px-6"></div>
+            <div class="font-light">wed</div>
+          </div>
+          <div class="flex flex-col justify-end items-center gap-2">
+            <div class="bg-dark-brown px-2 py-1 rounded-lg text-white font-bold hidden">$10.25</div>
+            <div id="bar-thu" class="bg-soft-red rounded-lg px-6"></div>
+            <div class="font-light">thu</div>
+          </div>
+          <div class="flex flex-col justify-end items-center gap-2">
+            <div class="bg-dark-brown px-2 py-1 rounded-lg text-white font-bold hidden">$10.25</div>
+            <div id="bar-fri" class="bg-soft-red rounded-lg px-6"></div>
+            <div class="font-light">fri</div>
+          </div>
+          <div class="flex flex-col justify-end items-center gap-2">
+            <div class="bg-dark-brown px-2 py-1 rounded-lg text-white font-bold hidden">$10.25</div>
+            <div id="bar-sat" class="bg-soft-red rounded-lg px-6"></div>
+            <div class="font-light">sat</div>
+          </div>
+          <div class="flex flex-col justify-end items-center gap-2">
+            <div class="bg-dark-brown px-2 py-1 rounded-lg text-white font-bold hidden">$10.25</div>
+            <div id="bar-sun" class="bg-soft-red rounded-lg px-6"></div>
+            <div class="font-light">sun</div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-10 flex justify-between hidden">
+        <div class="flex flex-col justify-end items-center gap-2">
+          <div class="bg-dark-brown px-2 py-1 rounded-lg text-white font-bold">$10.25</div>
+          <div class="bg-soft-red rounded-lg py-[23%] px-6"></div>
+          <div class="font-light">mon</div>
+        </div>
+        <div class="flex flex-col justify-end items-center gap-2">
+          <div class="bg-dark-brown px-2 py-1 rounded-lg text-white font-bold">$10.25</div>
+          <div class="bg-soft-red rounded-lg py-[33%] px-6"></div>
+          <div class="font-light">mon</div>
+        </div>
+        <div class="flex flex-col justify-end items-center gap-2">
+          <div class="bg-dark-brown px-2 py-1 rounded-lg text-white font-bold">$10.25</div>
+          <div class="bg-soft-red rounded-lg py-[43%] px-6"></div>
+          <div class="font-light">mon</div>
+        </div>
+        <div class="flex flex-col justify-end items-center gap-2">
+          <div class="bg-dark-brown px-2 py-1 rounded-lg text-white font-bold">$10.25</div>
+          <div class="bg-soft-red rounded-lg py-[13%] px-6"></div>
+          <div class="font-light">mon</div>
+        </div>
+        <div class="flex flex-col justify-end items-center gap-2">
+          <div class="bg-dark-brown px-2 py-1 rounded-lg text-white font-bold">$10.25</div>
+          <div class="bg-soft-red rounded-lg py-[53%] px-6"></div>
+          <div class="font-light">mon</div>
+        </div>
+        <div class="flex flex-col justify-end items-center gap-2">
+          <div class="bg-dark-brown px-2 py-1 rounded-lg text-white font-bold">$10.25</div>
+          <div class="bg-soft-red rounded-lg py-[53%] px-6"></div>
+          <div class="font-light">mon</div>
+        </div>
+        <div class="flex flex-col justify-end items-center gap-2">
+          <div class="bg-dark-brown px-2 py-1 rounded-lg text-white font-bold">$10.25</div>
+          <div class="bg-soft-red rounded-lg py-[13%] px-6"></div>
+          <div class="font-light">mon</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  $921.48
+
+  Spending - Last 7 days
+
+  mon
+  tue
+  wed
+  thu
+  fri
+  sat
+  sun
+
+  Total this month
+  $478.33
+
+  +2.4%
+  from last month
+  <script src="./script.js"></script>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+
+</html>
